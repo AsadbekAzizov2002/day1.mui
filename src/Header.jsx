@@ -7,8 +7,9 @@ import { Button } from '@mui/material';
 
 const Header = () => {
   return (
-    <div className='w-[1300px] container mx-auto p-4'>
-    <div className=' flex items-center justify-between' >
+   <>
+    <div className=' container mx-auto w-[1300px]  p-4'>
+    <div className='   flex items-center justify-between' >
         <h1 className=' text-3xl font-bold'>ZONE</h1>
         <ul className=' flex space-x-3'>
           <li className=' cursor-pointer transition-colors hover:text-blue-500'>
@@ -39,6 +40,7 @@ const Header = () => {
           <Route path="/docs" element={<Docs/>}/>
         </Routes>
     </div>
+   </>
 
   )
 }
